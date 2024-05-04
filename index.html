@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    <title>Jinseo Park Logo Website</title>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.0/buzz.min.js"></script>
+        
+        <style>
+            .row{
+                width:1200px;
+                margin: 10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:50px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="row">
+            <div class="image-container">
+                <img id="SysLogo" src="img/System Logo 1.png" height="300" width="300"
+                    onmousedown= "this.src='img/System Logo 2.png';"
+                    onmouseup= "this.src='img/System Logo 1.png';"
+                />
+            </div>
+            
+            <div class="image-container">
+                <img id="SecSysLogo" src="img/Security System Logo 1.png" height="300" width="300"
+                    onmousedown= "this.src='img/Security System Logo 2.png';"
+                    onmouseup= "this.src='img/Security System Logo 1.png';"                     
+                />
+            </div>
+            
+            <div class="image-container">
+                <img id="NervSysLogo" src="img/Nervous System Logo 1.png" height="300" width="300"
+                    onmousedown= "this.src='img/Nervous System Logo 2.png';"
+                    onmouseup= "this.src='img/Nervous System Logo 1.png';"
+                />
+            </div>
+            
+        </div>
+
+        <div class="row">
+            <div class="image-container">
+                <img id="ManuSysLogo" src="img/Manufacturing System Logo 1.png" height="300" width="300"
+                    onmousedown="this.src='img/Manufacturing System Logo 2 Blue.png';"
+                    onmouseup="this.src='img/Manufacturing System Logo 1.png';"
+                />
+            </div>
+
+            <div class="image-container">
+                <img id="EcoSysLogo" src="img/Ecosystem Logo 1.png" height="300" width="300"
+                    onmousedown= "this.src='img/Ecosystem Logo 2.png';"
+                    onmouseup= "this.src='img/Ecosystem Logo 1.png';"
+                />
+            </div>
+            <div class="image-container">
+                <img id="SolSysLogo" src="img/Solar System Logo 1.png" height="300" width="300"
+                onmousedown= "this.src='img/Solar System Logo 2.png';"
+                onmouseup= "this.src='img/Solar System Logo 1.png';"
+                />
+            </div>
+            
+        </div>
+
+        <div class="row">
+            <div class="image-container">
+                <img id="EconSysLogo" src="img/Economic System Logo 1.png" height="300" width="300"
+                onmousedown= "this.src='img/Economic System Logo 2 Blue.png';"
+                onmouseup= "this.src='img/Economic System Logo 1.png';"
+                />
+            </div>
+            <div class="image-container">
+                <img id="SoundSysLogo" src="img/Sound System Logo 1.png" height="300" width="300"
+                onmousedown= "this.src='img/Sound System Logo 2.png';"
+                onmouseup= "this.src='img/Sound System Logo 1.png';"
+                />
+            </div>
+            <div class="image-container">
+                <img id="ComSysLogo" src="img/Computer System Logo 1.png" height="300" width="300"
+                onmousedown= "this.src='img/Computer System Logo 2.png';"
+                onmouseup= "this.src='img/Computer System Logo 1.png';"
+                />
+            </div>
+        </div>
+        
+        <script>
+            var sound1 = new buzz.sound("sound/GenSysSound.mp3");
+            var sound2 = new buzz.sound("sound/SecSysSound.mp3");
+            var sound3 = new buzz.sound("sound/NervSysSound.mp3");
+            var sound4 = new buzz.sound("sound/ManuSysSound.mp3");
+            var sound5 = new buzz.sound("sound/EcoSysSound.mp3");
+            var sound6 = new buzz.sound("sound/SolarSysSound.mp3");
+            var sound7 = new buzz.sound("sound/EconSysSound.mp3");
+            var sound8 = new buzz.sound("sound/SoundSysSound.mp3");
+            var sound9 = new buzz.sound("sound/CompSysSound.mp3");
+     
+            window.onload = function() {
+                document.getElementById('SysLogo').addEventListener('mousedown', function () {sound1.play(); });  
+                document.getElementById('SecSysLogo').addEventListener('mousedown', function () {sound2.play(); });
+                document.getElementById('NervSysLogo').addEventListener('mousedown', function () {sound3.play(); });
+                document.getElementById('ManuSysLogo').addEventListener('mousedown', function () {sound4.play(); });
+                document.getElementById('EcoSysLogo').addEventListener('mousedown', function () {sound5.play(); }); 
+                document.getElementById('SolSysLogo').addEventListener('mousedown', function () {sound6.play(); }); 
+                document.getElementById('EconSysLogo').addEventListener('mousedown', function () {sound7.play(); }); 
+                document.getElementById('SoundSysLogo').addEventListener('mousedown', function () {sound8.play(); }); 
+                document.getElementById('ComSysLogo').addEventListener('mousedown', function () {sound9.play(); });
+            }  
+        </script>   
+            
+    </body>
+    
+</html>
